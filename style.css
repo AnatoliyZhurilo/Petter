@@ -259,6 +259,7 @@ h4 {
 .how-works-item__picture {
     width: 580px;
     margin-right: 43px;
+    flex-shrink: 0;
 }
 
 .testimonial {
