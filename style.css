@@ -257,7 +257,7 @@ h4 {
 }
 
 .how-works-item__picture {
-    min-width: 580px;
+    width: 580px;
     margin-right: 43px;
 }
 
