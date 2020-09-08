@@ -18,9 +18,11 @@ a {
 .small-detective {
     position: absolute;
     left: 0;
+    top: 5px;
 }
 
 header {
+    border: 1px solid transparent;
     position: relative;
     padding: 0 109px 0 149px;
     justify-content: space-between;
@@ -29,11 +31,57 @@ header {
     box-shadow: var(--default-shadow);
     display: flex;
     margin-bottom: 55px;
+    z-index: 2;
+    background-color: #fff;
 }
 
 .header-title {
     color: #000000;
     font-size: 30px;
+}
+
+#hamburger {
+    border: none;
+    height: 27px;
+    position: absolute;
+    z-index: 2;
+    right: 16px;
+    background-color: transparent;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+#hamburger-check {
+    display: none;
+}
+
+#hamburger span {
+    top: 12px;
+    transition: 0.2s;
+}
+
+#hamburger:before {
+    top: 2px;
+    transition: 0.2s;
+    transform-origin: top left;
+}
+#hamburger:after {
+    bottom: 2px;
+    transition: 0.2s;
+    transform-origin: bottom left;
+
+}
+#hamburger:after, #hamburger:before, #hamburger span {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    background-color: var(--pink-color);
+    position: absolute;
 }
 
 .pinky {
@@ -299,6 +347,8 @@ h4 {
 .cards {
     display: flex;
     justify-content: space-between;
+    max-width: 990px;
+    margin: 0 auto;
 }
 
 .card {
@@ -421,14 +471,68 @@ footer a:hover {
 
 /**/
 
+/*--xs: 576px;*/
+/*--sm: 768px;*/
+/*--md: 992px;*/
+/*--lg: 1200px;*/
+
+@media screen and (max-width: 992px)  {
+    header {
+        display: block;
+        position: sticky;
+        top: 0;
+        padding: 0 0 0 80px;
+    }
+    .header-title {
+        font-size: 24px;
+        line-height: 33px;
+        margin: 24px 0;
+    }
+    nav {
+        box-sizing: border-box;
+        padding: 40px 0 0 80px;
+        position: fixed;
+        height: calc(100vh - 82px);
+        z-index: 2;
+        bottom: 0;
+        left: -100%;
+        background-color: #fff;
+        width: 100%;
+        transition: 0.2s;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-links-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .header-link {
+        margin: 10px 0;
+        display: block;
+        height: 20px;
+    }
+    #hamburger-check:checked ~ nav {
+        left:0;
+    }
+    #hamburger-check:checked ~ label:before {
+        transform: rotate(45deg);
+    }
+    #hamburger-check:checked ~ label:after {
+        transform: rotate(-45deg);
+    }
+    #hamburger-check:checked ~ label span {
+        opacity: 0;
+    }
+}
+
+/**/
 
 @font-face {
     font-family: 'Avenir';
     src: url('./fonts/Avenir-Medium.woff2') format('woff2'),
          url('./fonts/Avenir-Medium.woff') format('woff'),
          url('./fonts/Avenir-Medium.ttf') format('truetype');
-    /*font-weight: 300;*/
-    /*font-style: normal;*/
 }
 
 @font-face {
