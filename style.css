@@ -238,6 +238,7 @@ main {
     box-sizing: border-box;
     position: relative;
     padding: 0 10px 0 30px;
+    cursor: pointer;
 }
 
 .analyse-button:before {
@@ -443,6 +444,7 @@ h4 {
     color: #ffffff;
     background-color: var(--pink-color);
     margin-top: 20px;
+    cursor: pointer;
     border: none;
 }
 
