@@ -1,5 +1,5 @@
 * {
-    font-family: 'Avenir', sans-serif;
+    font-family: avenir, 'avenir-backup', verdana, sans-serif;
 }
 
 :root {
@@ -22,6 +22,7 @@ a {
 }
 
 header {
+    box-sizing: border-box;
     border: 1px solid transparent;
     position: relative;
     padding: 0 109px 0 149px;
@@ -30,8 +31,7 @@ header {
     height: 80px;
     box-shadow: var(--default-shadow);
     display: flex;
-    margin-bottom: 55px;
-    z-index: 2;
+    z-index: 10;
     background-color: #fff;
 }
 
@@ -41,6 +41,7 @@ header {
 }
 
 #hamburger {
+    display: none;
     border: none;
     height: 27px;
     position: absolute;
@@ -92,7 +93,7 @@ header {
     width: 111px;
     height: 40px;
     color: var(--pink-color);
-    border: 1px solid var(--pink-color);
+    border: 2px solid var(--pink-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,14 +139,6 @@ nav {
     color: var(--pink-color)
 }
 
-/*#language-select option[value="english"] {*/
-/*    position: absolute;*/
-/*    -webkit-background-size: 100%;*/
-/*    background-size: 100%;*/
-/*    background-image: url(./images/languages/eng-icon.png);*/
-/*    display: block;*/
-/*}*/
-
 #language-select-icon {
     width: 34px;
     height: 34px;
@@ -160,9 +153,6 @@ nav {
 #language-select-list {
     display: none;
     position: absolute;
-    /*border: 1px solid red;*/
-    /*width: 100px;*/
-    /*height: 50px;*/
     padding: 0;
     top: 40px;
     transform: translate(-50%);
@@ -190,6 +180,8 @@ nav {
 main {
     position: relative;
     color: var(--font-color);
+    background-color: #f9f9f9;
+    padding-top: 30px;
 }
 
 .main-title {
@@ -197,6 +189,8 @@ main {
     max-width: 638px;
     margin-top: 24px;
     line-height: 66px;
+    position: relative;
+    z-index: 4;
 }
 
 .main-info {
@@ -204,10 +198,19 @@ main {
     margin: 10px 0;
     line-height: 36px;
     font-weight: lighter;
+    position: relative;
+    z-index: 4;
 }
 
 .first-block {
+    z-index: 2;
     margin: 0 101px 88px 149px;
+}
+
+.analyse-wrapper{
+    position: relative;
+    width: 545px;
+    z-index: 4;
 }
 
 .analyse-input {
@@ -250,8 +253,8 @@ main {
 .big-detective {
     position: absolute;
     right: 0;
-    top: -25px;
-    z-index: -1;
+    top: 20px;
+    z-index: 0;
 }
 
 /**/
@@ -281,12 +284,13 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /**/
 
 .third-how-it-works-block {
-    padding: 0 114px 0 87px;
+    margin: 0 114px 0 87px;
 }
 
 .how-works-item {
@@ -296,6 +300,7 @@ h4 {
 .how-works-item p {
     font-weight: lighter;
 }
+
 .how-works-item p, .how-works-item q {
     line-height: 28px;
     margin-top: 0px;
@@ -310,7 +315,6 @@ h4 {
 }
 
 .how-works-item:last-child {
-    display: flex;
     margin-bottom: 54px;
 }
 
@@ -318,15 +322,23 @@ h4 {
     flex-flow: row-reverse;
 }
 
-.how-works-item:nth-child(2n + 1) .how-works-item__picture {
+.how-works-item:nth-child(2n + 1) .how-works-item__image-wrapper {
     margin-left: 43px;
     margin-right: 0px;
 }
 
-.how-works-item__picture {
-    width: 580px;
+.how-works-item__image-wrapper {
+    width: 60%;
+    max-width: 580px;
     margin-right: 43px;
-    flex-shrink: 0;
+}
+
+.how-works-item__picture {
+    width: 100%;
+}
+
+.how-works-item__info {
+    width: 40%;
 }
 
 .testimonial {
@@ -341,17 +353,20 @@ h4 {
 /**/
 
 .fourth-price-block {
-    padding: 0 114px 0 87px;
+    margin: 0 114px 0 87px;
 }
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 990px;
     margin: 0 auto;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .card {
+    background-color: #fff;
     width: 310px;
     height: 410px;
     box-shadow: var(--default-shadow);
@@ -362,6 +377,8 @@ h4 {
     align-items: center;
     color: var(--solid-gray);
     transition: 0.1s;
+    /*margin-bottom: 28px;*/
+    margin: 15px 0 28px;
 }
 
 .card:hover {
@@ -430,16 +447,19 @@ h4 {
 }
 
 .payment-system-block {
-    margin-top: 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: lighter;
+}
 
+.payment-system-block p {
+    font-size: 18px;
+    text-align: center;
 }
 
 
-/**/
+    /**/
 
 footer {
     margin-top: 74px;
@@ -476,24 +496,23 @@ footer a:hover {
 /*--md: 992px;*/
 /*--lg: 1200px;*/
 
-@media screen and (max-width: 992px)  {
+@media (max-width: 992px)  {
     header {
         display: block;
-        position: sticky;
+        position: fixed;
         top: 0;
         padding: 0 0 0 80px;
+        width: 100%;
     }
-    .header-title {
-        font-size: 24px;
-        line-height: 33px;
-        margin: 24px 0;
+    main {
+        padding-top: 96px;
     }
     nav {
         box-sizing: border-box;
         padding: 40px 0 0 80px;
         position: fixed;
         height: calc(100vh - 82px);
-        z-index: 2;
+        z-index: 10;
         bottom: 0;
         left: -100%;
         background-color: #fff;
@@ -512,6 +531,9 @@ footer a:hover {
         display: block;
         height: 20px;
     }
+    #hamburger {
+        display: block;
+    }
     #hamburger-check:checked ~ nav {
         left:0;
     }
@@ -524,19 +546,165 @@ footer a:hover {
     #hamburger-check:checked ~ label span {
         opacity: 0;
     }
+
+    .first-block, .second-trusted-by-block, .third-how-it-works-block, .fourth-price-block {
+        margin: 0 15px 0 30px;
+    }
+
+    .how-works-item__image-wrapper {
+        width: 40%;
+    }
+
+    .how-works-item__info {
+        width: 60%;
+    }
+    .big-detective {
+        position: absolute;
+        right: 0;
+        top: 96px;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    header {
+        padding: 0 0 0 80px;
+    }
+    .header-title {
+        font-size: 24px;
+        line-height: 33px;
+        margin: 24px 0;
+    }
+    .main-title {
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+    }
+    nav {
+        padding: 40px 0 0 80px;
+    }
+    .big-detective {
+        display: none;
+    }
+
+    .card {
+        margin: 15px 28px 28px;
+    }
+    .main-info {
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .pinky-big {
+        color: var(--font-color);
+    }
+
+
+    .analyse-wrapper{
+        position: relative;
+        width: 100%;
+    }
+
+    .analyse-input {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .analyse-button {
+        margin: 15px 0 0 0;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .analyse-button:before {
+        content: '';
+        left: 10px;
+        background-image: url(./images/loupe-icon.png);
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+    }
+
+    h3{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    .trusted-by {
+        flex-direction: column;
+    }
+    .trusted-by img {
+        margin: 27px 0;
+    }
+
+    .how-works-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 71px;
+    }
+
+    .how-works-item__image-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .how-works-item__picture {
+        width: 100%;
+    }
+
+    .how-works-item__info {
+        width: 100%;
+    }
+
+    .how-works-item:nth-child(2n + 1) {
+        flex-flow: row;
+        flex-direction: column;
+    }
+
+    .how-works-item:nth-child(2n + 1) .how-works-item__image-wrapper {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .payment-system-block p {
+        font-size: 15px;
+    }
+
+    .payment-system-block img {
+        width: 260px;
+    }
+
+    footer {
+        height: 375px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer li {
+        margin: 32px 0;
+    }
+}
+
+@media (max-width: 355px) {
+    header {
+        padding-left: 43px;
+    }
 }
 
 /**/
 
 @font-face {
-    font-family: 'Avenir';
+    font-family: 'avenir-backup';
     src: url('./fonts/Avenir-Medium.woff2') format('woff2'),
          url('./fonts/Avenir-Medium.woff') format('woff'),
          url('./fonts/Avenir-Medium.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Avenir';
+    font-family: 'avenir-backup';
     src: url('./fonts/Avenir-Light.woff2') format('woff2'),
          url('./fonts/Avenir-Light.woff') format('woff'),
          url('./fonts/Avenir-Light.ttf') format('truetype');
