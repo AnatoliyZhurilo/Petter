@@ -382,7 +382,7 @@ h4 {
 .card {
     background-color: #fff;
     width: 310px;
-    height: 410px;
+    min-height: 410px;
     box-shadow: var(--default-shadow);
     padding: 40px 20px 30px;
     box-sizing: border-box;
@@ -482,6 +482,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100px;
+    border: 1px solid transparent;
 }
 
 footer ul {
@@ -719,7 +720,11 @@ footer a:hover {
 
 @media (max-width: 355px) {
     header {
-        padding-left: 50px;
+        padding: 0;
+    }
+    .header-title {
+        margin: 25px auto;
+        width: fit-content;
     }
     nav {
         padding: 40px 0 0 50px;
