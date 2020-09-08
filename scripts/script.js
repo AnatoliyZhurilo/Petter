@@ -1,3 +1,4 @@
+const languageSelectWrapper = $('#language-select-wrapper')
 const languageSelectIcon = $('#language-select-icon')
 const languageSelectList = $('#language-select-list')
 
@@ -5,7 +6,7 @@ const selectedLanguage = 'english'
 languageSelectIcon.addClass(selectedLanguage)
 let isListOpen = false
 
-languageSelectIcon.on('click', () => {
+languageSelectWrapper.on('click', () => {
   isListOpen = !isListOpen
 
   if (isListOpen) {
