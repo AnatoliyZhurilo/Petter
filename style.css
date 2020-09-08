@@ -206,8 +206,12 @@ main {
 }
 
 .first-block {
-    z-index: 2;
     margin: 0 101px 88px 149px;
+}
+
+.first-block__content {
+    max-width: 952px;
+    margin: 0 auto;
 }
 
 .analyse-wrapper {
@@ -289,6 +293,8 @@ h4 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 952px;
+    margin: 0 auto;
 }
 
 /**/
@@ -299,6 +305,7 @@ h4 {
 
 .how-works-item {
     display: flex;
+    justify-content: center;
     margin-bottom: 71px;
 }
 
