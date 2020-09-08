@@ -311,6 +311,11 @@ h4 {
     flex-direction: column;
     align-items: center;
     color: var(--solid-gray);
+    transition: 0.1s;
+}
+
+.card:hover {
+    box-shadow: var(--hover-shadow);
 }
 
 .card__title {
