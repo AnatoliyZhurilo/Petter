@@ -28,3 +28,14 @@ languageSelectList.on('click', (e) => {
   languageSelectIcon.addClass(e.target.textContent)
   closeList()
 })
+
+///
+
+const pricingButton = $('#pricing-link')
+const hamburgerCheck = $('#hamburger-check')[0]
+const pricingBlock = $('.fourth-price-block')[0]
+pricingButton.on('click', e => {
+  e.preventDefault()
+  hamburgerCheck.checked = false
+  pricingBlock.scrollIntoView({behavior: 'smooth'})
+})
