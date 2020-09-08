@@ -17,10 +17,10 @@ languageSelectWrapper.on('click', () => {
 });
 
 const openList = () => {
-  languageSelectList.addClass( 'opened' );
+  languageSelectList.addClass('opened');
 }
 const closeList = () => {
-  languageSelectList.removeClass( 'opened' );
+  languageSelectList.removeClass('opened');
 }
 
 languageSelectList.on('click', (e) => {
