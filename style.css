@@ -264,7 +264,7 @@ main {
     box-shadow: var(--default-shadow);
     box-sizing: border-box;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 40px;
 }
 
 .analyse-button {
