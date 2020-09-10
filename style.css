@@ -1,6 +1,25 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css 
+*/html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+/*# sourceMappingURL=normalize.min.css.map */
+
+
+
+/* this is copied to the header 
+
 * {
     font-family: avenir, 'avenir-backup', verdana, sans-serif;
 }
+
+*/
+
+input[type=text] {   
+    /* Removes iOS input shadow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;   
+}
+
+
 
 :root {
     --pink-color: #bd4df2;
@@ -18,7 +37,9 @@ a {
 .small-detective {
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 3px;
+    height: 70px;
+    margin-left: -1px;
 }
 
 header {
@@ -31,7 +52,7 @@ header {
     height: 80px;
     box-shadow: var(--default-shadow);
     display: flex;
-    z-index: 10;
+    z-index: 11;
     background-color: #fff;
 }
 
@@ -189,10 +210,11 @@ main {
 .main-title {
     font-size: 48px;
     max-width: 638px;
-    margin-top: 20px;
+    margin: 0 20px 0 0;
     line-height: 66px;
     position: relative;
     z-index: 4;
+    font-weight: 900;
 }
 
 .main-info {
@@ -348,6 +370,9 @@ h4 {
 .how-works-item__picture {
     width: 100%;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+   
+    border-radius: 5px;
+
 }
 
 .how-works-item__info {
@@ -367,7 +392,7 @@ h4 {
 /**/
 
 .fourth-price-block {
-    margin: 0 110px 0 90px;
+  /* P Removes.. no use ?  margin: 0 110px 0 90px; */
 }
 
 .cards {
@@ -381,17 +406,19 @@ h4 {
 
 .card {
     background-color: #fff;
-    width: 310px;
+    width: 304px;
     min-height: 410px;
     box-shadow: var(--default-shadow);
-    padding: 40px 20px 30px;
+    padding: 35px 15px 25px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--solid-gray);
     transition: 0.1s;
-    margin: 0 0 30px;
+    margin: 0 0 10px;
+    border: 5px solid #fff;
+    border-radius: 5px;
 }
 
 .card:hover {
@@ -415,6 +442,8 @@ h4 {
     line-height: 71px;
     font-weight: 800;
     text-align: center;
+    letter-spacing: -2px;
+
 }
 
 .card__divider {
@@ -442,7 +471,9 @@ h4 {
 .card__list {
     font-weight: lighter;
     padding: 20px 10px 0 40px;
-    list-style-image: url('./images/card-check.png');
+  list-style-image: url('./images/card-check.png');
+    line-height: 1.8;
+ 
 }
 
 .card__button {
@@ -457,6 +488,8 @@ h4 {
     margin-top: 20px;
     cursor: pointer;
     border: none;
+    font-size: 110%;
+    font-weight: 500;
 }
 
 .payment-system-block {
@@ -522,7 +555,7 @@ footer a:hover {
         box-sizing: border-box;
         padding: 40px 0 0 80px;
         position: fixed;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 60px);
         z-index: 10;
         bottom: 0;
         left: -100%;
@@ -580,23 +613,35 @@ footer a:hover {
     }
 
     .big-detective {
-        position: absolute;
+        /* position: absolute;
         right: 0;
         top: 100px;
-        z-index: 0;
+        z-index: 0; */
+
+        display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
     header {
         padding: 0 0 0 80px;
+         height: 60px;
+    }
+
+    #hamburger{
+            top: 19px;
     }
 
     .header-title {
         font-size: 24px;
         line-height: 33px;
-        margin: 25px 0;
+        margin: 14px 0;
     }
+
+    .small-detective {
+    height: 50px;
+   
+}
 
     .main-title {
         font-size: 28px;
@@ -608,12 +653,8 @@ footer a:hover {
         padding: 40px 0 0 80px;
     }
 
-    .big-detective {
-        display: none;
-    }
-
     .card {
-        margin: 0 30px 30px;
+        margin: 20px 0 0 0;
     }
 
     .main-info {
@@ -704,7 +745,7 @@ footer a:hover {
     }
 
     footer {
-        height: 375px;
+        height: 280px;
     }
 
     footer ul {
@@ -713,7 +754,7 @@ footer a:hover {
     }
 
     footer li {
-        margin: 30px 0;
+        margin: 20px 0;
     }
 }
 

@@ -4,17 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Petter</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous"/>
+  <title>Influencer Detective</title>
+
   <script>
     document.write('<link rel="stylesheet" href="./style.css?cashkiller='+Math.random()+'">')
   </script>
+
+<style type="text/css">
+ 
+ * {
+    font-family: avenir, verdana, sans-serif;
+
+    /* , 'avenir-backup' remove the font to test * /
+} 
+
+
+</style>
+
 </head>
 <body>
 <header>
-  <img src="./images/detective-small.svg" class="small-detective" alt="small-detective">
+  <img src="./images/influencer-detective-logo.png" class="small-detective" alt="small-detective">
 
   <h2 class="header-title"><a href="#">Influencer<span class="pinky">Detective</span></a></h2>
   <input type="checkbox" name="hamburger-check" id="hamburger-check">
@@ -61,7 +71,7 @@
         <button class="analyse-button">Analyse Influencer</button>
       </div>
     </div>
-    <img src="./images/detective-big.svg" alt="detective-big" class="big-detective">
+    <img src="./images/detective-woman-big-transparent.png" height="500" alt="detective-big" class="big-detective">
   </section>
 
   <section class="second-trusted-by-block">
@@ -84,7 +94,7 @@
         <img src="./images/bitmap.png" alt="bitmap" class="how-works-item__picture">
       </div>
       <div class="how-works-item__info">
-        <h4>Herbal Skin Care Secrets Hidden At The Greengrocer S</h4>
+        <h4>We analyse followers</h4>
         <p>
           Nam porta, nunc eu venenatis blandit, nunc odio ultrices quam scelerisque. Phasellus tristique, velit
           bibendum hendrerit gravida, tortor erat scelerisque mi, sed posuere purus lacus nec ipsum. Vivamus augue
@@ -105,7 +115,7 @@
         <img src="./images/bitmap.png" alt="bitmap" class="how-works-item__picture">
       </div>
       <div class="how-works-item__info">
-        <h4>Herbal Skin Care Secrets Hidden At The Greengrocer S</h4>
+        <h4>Finding fake followers</h4>
         <p>
           Nam porta, nunc eu venenatis blandit, nunc odio ultrices quam scelerisque. Phasellus tristique, velit
           bibendum hendrerit gravida, tortor erat scelerisque mi, sed posuere purus lacus nec ipsum. Vivamus augue
@@ -124,9 +134,16 @@
   </section>
 
   <section class="fourth-price-block" id="pricing">
-    <h3>
+    <h3 style="margin-bottom: 0;">
       Prices
     </h3>
+<style type="text/css">
+  /* Optional, set the text in divider, original is 'Per month' */
+
+    span.card__divider:before {
+    content: 'Per Månad';
+}
+</style>
 
     <div class="cards">
 
@@ -135,11 +152,11 @@
         <p class="card__price">$99</p>
         <span class="card__divider"></span>
         <ul class="card__list">
-          <li>20 Audience analysis / month</li>
+          <li>20 Audience analysis</li>
           <li>1 User</li>
           <li>Support in English</li>
         </ul>
-        <button class="card__button">3 Credit free Trial</button>
+        <button class="card__button">Start Free Trial</button>
       </div>
 
       <div class="card">
@@ -147,11 +164,11 @@
         <p class="card__price">$199</p>
         <span class="card__divider"></span>
         <ul class="card__list">
-          <li>50 Audience analysis / month</li>
+          <li>50 Audience analysis</li>
           <li>5 User</li>
           <li>Support in English</li>
         </ul>
-        <button class="card__button">3 Credit free Trial</button>
+        <button class="card__button">Start Free Trial</button>
       </div>
 
       <div class="card">
@@ -159,11 +176,11 @@
         <p class="card__price">$299</p>
         <span class="card__divider"></span>
         <ul class="card__list">
-          <li>100 Audience analysis / month</li>
+          <li>100 Audience analysis</li>
           <li>10 User</li>
           <li>Priority support in English</li>
         </ul>
-        <button class="card__button">3 Credit free Trial</button>
+        <button class="card__button">Start Free Trial</button>
       </div>
 
     </div>
