@@ -26,6 +26,10 @@ input[type=text] {
     --hover-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
 }
 
+body.scrollDisabled {
+    overflow: hidden;
+}
+
 a {
     color: var(--solid-gray);
     text-decoration: none;
@@ -253,7 +257,7 @@ main {
 
 .analyse-input {
     width: 333px;
-    padding: 0 20px;
+    padding: 20px;
     border: 1px solid #bdc0c9;
     height: 50px;
     border-radius: 5px 0 0 5px;
@@ -611,6 +615,10 @@ footer a:hover {
 
     #hamburger-check:checked ~ nav {
         left: 0;
+    }
+
+    #hamburger-check:checked ~ body{
+        overflow: hidden;
     }
 
     #hamburger-check:checked ~ label:before {
