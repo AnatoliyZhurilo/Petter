@@ -7,48 +7,49 @@
   <title>Influencer Detective</title>
 
   <script>
-    document.write('<link rel="stylesheet" href="./style.css?cashkiller='+Math.random()+'">')
+    document.write('<link rel="stylesheet" href="./style.css?cashkiller=' + Math.random() + '">')
   </script>
 
-<style type="text/css">
- 
- * {
-    font-family: avenir, verdana, sans-serif;
+  <style type="text/css">
+      * {
+          font-family: avenir, 'avenir-backup', verdana, sans-serif;
+      }
 
-    /* , 'avenir-backup' remove the font to test * /
-} 
-
-
+      /* , 'avenir-backup' remove the font to test * /
 </style>
 
 </head>
 <body>
 <header>
   <img src="./images/influencer-detective-logo.png" class="small-detective" alt="small-detective">
+  <div class="header__wrapper">
 
-  <h2 class="header-title"><a href="#">Influencer<span class="pinky">Detective</span></a></h2>
-  <input type="checkbox" name="hamburger-check" id="hamburger-check">
-  <label for="hamburger-check" id="hamburger">
-    <span></span>
-  </label>
-  <nav class="nav">
-    <a href="#" class="start-trial-link">Start Trial</a>
+    <div class="header__content">
+      <h2 class="header-title"><a href="#">Influencer<span class="pinky">Detective</span></a></h2>
+      <input type="checkbox" name="hamburger-check" id="hamburger-check">
+      <label for="hamburger-check" id="hamburger">
+        <span></span>
+      </label>
+      <nav class="nav">
+        <a href="#" class="start-trial-link">Start Trial</a>
 
-    <ul class="header-links-wrapper">
-      <li><a href="#pricing" class="header-link" id="pricing-link">Pricing</a></li>
-      <li><a href="#" class="header-link">Login</a></li>
-      <li><a href="#" class="header-link">Contact</a></li>
-    </ul>
+        <ul class="header-links-wrapper">
+          <li><a href="#pricing" class="header-link" id="pricing-link">Pricing</a></li>
+          <li><a href="#" class="header-link">Login</a></li>
+          <li><a href="#" class="header-link">Contact</a></li>
+        </ul>
 
-    <div id="language-select-wrapper">
-      <span class="language-label">Lang</span>
-      <span id="language-select-icon"></span>
-      <ul id="language-select-list">
-        <li class="language-select-item">english</li>
-        <li class="language-select-item">example</li>
-      </ul>
+        <div id="language-select-wrapper">
+          <span class="language-label">Lang</span>
+          <span id="language-select-icon"></span>
+          <ul id="language-select-list">
+            <li class="language-select-item">english</li>
+            <li class="language-select-item">example</li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </nav>
+  </div>
 
 
 </header>
@@ -137,13 +138,13 @@
     <h3 style="margin-bottom: 0;">
       Prices
     </h3>
-<style type="text/css">
-  /* Optional, set the text in divider, original is 'Per month' */
+    <style type="text/css">
+        /* Optional, set the text in divider, original is 'Per month' */
 
-    span.card__divider:before {
-    content: 'Per Månad';
-}
-</style>
+        span.card__divider:before {
+            content: 'Per Månad';
+        }
+    </style>
 
     <div class="cards">
 
@@ -203,8 +204,8 @@
 
 
 <script>
-  document.write('<scr' + 'ipt src="scripts/jquery.js?cashkiller='+Math.random()+'" type="module"></scr'+'ipt>')
-  document.write('<scr' + 'ipt src="scripts/script.js?cashkiller='+Math.random()+'" type="module"></scr'+'ipt>')
+  document.write('<scr' + 'ipt src="scripts/jquery.js?cashkiller=' + Math.random() + '" type="module"></scr' + 'ipt>')
+  document.write('<scr' + 'ipt src="scripts/script.js?cashkiller=' + Math.random() + '" type="module"></scr' + 'ipt>')
 </script>
 </body>
 </html>
