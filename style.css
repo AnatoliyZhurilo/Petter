@@ -264,10 +264,7 @@ main {
     box-shadow: var(--default-shadow);
     box-sizing: border-box;
     font-size: 18px;
-
-    display: flex;
-    align-items: center;
-    line-height: 146px;
+    line-height: 20px;
 }
 
 .analyse-button {
