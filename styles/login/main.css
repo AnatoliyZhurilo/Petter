@@ -73,6 +73,11 @@ input[name='firstName'], input[name='lastName'] {
     grid-template-columns: repeat(2, minmax(200px, 100%));
 }
 
+.form-info {
+    text-align: center;
+    font-size: 14px;
+}
+
 @media (max-width: 600px) {
     .form-content {
         grid-template-columns: 1fr;
