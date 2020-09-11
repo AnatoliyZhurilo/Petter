@@ -101,12 +101,7 @@
     }
 
     .big-detective {
-        /* position: absolute;
-        right: 0;
-        top: 100px;
-        z-index: 0; */
-
-        display: none;
+        display: none !important;
     }
 }
 

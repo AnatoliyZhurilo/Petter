@@ -42,3 +42,7 @@ pricingButton.on('click', e => {
   hamburgerCheck.checked = false
   pricingBlock.scrollIntoView({behavior: 'smooth'})
 })
+
+$(function() {
+  $('img').lazy()
+});

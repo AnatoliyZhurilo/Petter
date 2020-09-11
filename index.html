@@ -21,7 +21,7 @@
 </head>
 <body>
 <header>
-  <img src="./images/influencer-detective-logo.png" class="small-detective" alt="small-detective">
+  <img data-src="./images/influencer-detective-logo.png" class="small-detective" alt="small-detective lazy">
   <div class="header__wrapper">
 
     <div class="header__content">
@@ -72,18 +72,18 @@
         <button class="analyse-button">Analyse Influencer</button>
       </div>
     </div>
-    <img src="./images/detective-woman-big-transparent.png" height="500" alt="detective-big" class="big-detective lazy">
+    <img data-src="./images/detective-woman-big-transparent.png" height="500" alt="detective-big" class="big-detective lazy">
   </section>
 
   <section class="second-trusted-by-block">
     <h3>Trusted by the best</h3>
 
     <div class="trusted-by">
-      <img src="./images/trustedBy/lymh.svg" alt="lymh">
-      <img src="./images/trustedBy/nike.svg" alt="nike">
-      <img src="./images/trustedBy/disney.svg" alt="disney">
-      <img src="./images/trustedBy/uber.svg" alt="uber">
-      <img src="./images/trustedBy/universal.svg" alt="universal">
+      <img data-src="./images/trustedBy/lymh.svg" alt="lymh" class="lazy">
+      <img data-src="./images/trustedBy/nike.svg" alt="nike" class="lazy">
+      <img data-src="./images/trustedBy/disney.svg" alt="disney" class="lazy">
+      <img data-src="./images/trustedBy/uber.svg" alt="uber" class="lazy">
+      <img data-src="./images/trustedBy/universal.svg" alt="universal" class="lazy">
     </div>
   </section>
 
@@ -205,6 +205,8 @@
 
 <script>
   document.write('<scr' + 'ipt src="scripts/jquery.js?cashkiller=' + Math.random() + '" type="module"></scr' + 'ipt>')
+  document.write('<scr' + 'ipt src="scripts/jquery.lazy.min.js?cashkiller=' + Math.random() + '" type="module"></scr' + 'ipt>')
+  document.write('<scr' + 'ipt src="scripts/jquery.lazy.picture.min.js?cashkiller=' + Math.random() + '" type="module"></scr' + 'ipt>')
   document.write('<scr' + 'ipt src="scripts/script.js?cashkiller=' + Math.random() + '" type="module"></scr' + 'ipt>')
 </script>
 </body>
