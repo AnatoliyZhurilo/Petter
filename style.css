@@ -647,6 +647,13 @@ footer a:hover {
         opacity: 0;
     }
 
+    .trusted-by {
+        justify-content: center;
+    }
+
+    .trusted-by img {
+        margin: 30px 30px;
+    }
 
     .cards {
         flex-direction: column;
@@ -695,12 +702,6 @@ footer a:hover {
 
     }
 
-    .main-title {
-        font-size: 28px;
-        line-height: 38px;
-        text-align: center;
-    }
-
     nav {
         padding: 40px 0 0 80px;
     }
@@ -709,52 +710,9 @@ footer a:hover {
         margin: 20px 0 0 0;
     }
 
-    .main-info {
-        font-size: 18px;
-        line-height: 36px;
-    }
-
-    .pinky-big {
-        color: var(--font-color);
-    }
-
-
-    .analyse-wrapper {
-        position: relative;
-        width: 100%;
-    }
-
-    .analyse-input {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .analyse-button {
-        margin: 15px 0 0 0;
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    .analyse-button:before {
-        content: '';
-        left: 10px;
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        position: absolute;
-    }
-
     h3 {
         font-size: 28px;
         margin-top: 40px;
-    }
-
-    .trusted-by {
-        justify-content: center;
-    }
-
-    .trusted-by img {
-        margin: 30px 30px;
     }
 
     .how-works-item {
@@ -807,6 +765,48 @@ footer a:hover {
     footer li {
         margin: 20px 0;
     }
+}
+
+@media (max-width: 700px) {
+    .main-title {
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+    }
+    .main-info {
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .pinky-big {
+        color: var(--font-color);
+    }
+
+
+    .analyse-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .analyse-input {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .analyse-button {
+        margin: 15px 0 0 0;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .analyse-button:before {
+        content: '';
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+    }
+
 }
 
 @media (max-width: 355px) {
