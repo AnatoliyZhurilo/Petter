@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='icon' type='image/png' href='images/detective-small.svg'>
+  <link rel='icon' type='image/png' href='../images/detective-small.svg'>
   <title>Influencer Detective</title>
 
   <script>
-    document.write('<link rel="stylesheet" href="../styles/login.css?cashkiller=' + Math.random() + '">')
+    document.write('<link rel="stylesheet" href="../styles/login/login.css?cashkiller=' + Math.random() + '">')
   </script>
 
   <style type="text/css">
@@ -19,12 +19,12 @@
 </style>
 </head>
 <body>
-<header>
+<header class="login">
   <img src="../images/influencer-detective-logo.png" class="small-detective" alt="small-detective">
   <div class="header__wrapper">
 
     <div class="header__content">
-      <h2 class="header-title"><a href="#">Influencer<span class="pinky">Detective</span></a></h2>
+      <h2 class="header-title">Influencer<span class="pinky">Detective</span></h2>
       <input type="checkbox" name="hamburger-check" id="hamburger-check">
       <label for="hamburger-check" id="hamburger">
         <span></span>
@@ -34,5 +34,39 @@
 
 
 </header>
+<main>
+  <section class="login-card">
+    <h1>sarah@brand.com is confirmed!</h1>
+    <div class="info">
+      <p>
+        The analysis of @justinbieber has now started.
+      </p>
+      <p>
+        Create an account with us to log in and see your reports.
+      </p>
+      <p>
+        It will make it easier for you to see the analyses + you can test our other features.
+      </p>
+      <p>
+        Please enter password and some details to complete the account creation.
+      </p>
+    </div>
+    <form >
+      <div class="form-content">
+      <input type="password" name="password" id="" placeholder="Password">
+      <input type="text" name="firstName" placeholder="First Name">
+      <input type="text" name="lastName" placeholder="Last Name">
+      <input type="text" name="company" placeholder="Company Name">
+      <input type="text" name="number" placeholder="Phone number with country code +1 12345678">
+      <button>
+        Complete Account Creation
+      </button>
+      </div>
+      <p class="form-info">
+
+      </p>
+    </form>
+  </section>
+</main>
 </body>
 </html>

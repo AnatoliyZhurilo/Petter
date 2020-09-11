@@ -1,0 +1,88 @@
+.login-card {
+    min-height: 604px;
+    max-width: 552px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: var(--default-shadow);
+    margin: 48px auto;
+    box-sizing: border-box;
+    padding: 30px 50px 20px;
+}
+
+main {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--solid-gray);
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+h1:before {
+    content: '';
+    /*position: relative;*/
+    z-index: 2;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background-image: url('../../images/big-check-mark.svg');
+}
+p {
+    font-weight: 300;
+}
+.info {
+    margin-bottom: 32px;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 11px 14px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+button {
+    border: none;
+    min-height: 42px;
+    border-radius: 5px;
+    background-color: var(--pink-color);
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+input, button {
+    grid-column: span 2;
+}
+
+input[name='firstName'], input[name='lastName'] {
+    grid-column: span 1;
+}
+
+.form-content {
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 100%));
+}
+
+@media (max-width: 600px) {
+    .form-content {
+        grid-template-columns: 1fr;
+    }
+    input, button {
+        grid-column: span 1;
+    }
+}
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 20px 20px;
+    }
+}
