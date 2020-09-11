@@ -1,15 +1,4 @@
 const body = $('body')
-const hamburger = $('#hamburger-check')
-
-
-hamburger.on('change', e => {
-  const checked = e.target.checked
-  if (checked) {
-    body.addClass('scrollDisabled')
-    return
-  }
-  body.removeClass('scrollDisabled')
-})
 
 ///
 const languageSelectWrapper = $('#language-select-wrapper')
@@ -46,9 +35,10 @@ languageSelectList.on('click', (e) => {
 ///
 
 const pricingButton = $('#pricing-link')
+const hamburgerCheck = $('#hamburger-check')[0]
 const pricingBlock = $('.fourth-price-block')[0]
 pricingButton.on('click', e => {
   e.preventDefault()
-  hamburger.checked = false
+  hamburgerCheck.checked = false
   pricingBlock.scrollIntoView({behavior: 'smooth'})
 })
