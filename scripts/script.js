@@ -4,8 +4,6 @@ const hamburger = $('#hamburger-check')
 
 hamburger.on('change', e => {
   const checked = e.target.checked
-  console.log(e.target.checked);
-  console.log(body);
   if (checked) {
     body.addClass('scrollDisabled')
     return
