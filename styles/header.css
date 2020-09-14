@@ -20,8 +20,12 @@ header {
 }
 
 header.login .header__wrapper {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+}
+
+header.login .header-title {
     margin: 0 auto;
-    width: 300px;
 }
 
 .header__wrapper {

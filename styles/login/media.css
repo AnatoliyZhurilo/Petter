@@ -1,0 +1,12 @@
+@media (max-width: 480px) {
+    .header__wrapper {
+        width: calc(100% - 50px);
+        margin: 0 0 0 50px;
+    }
+    .header-title {
+        font-size: 26px;
+    }
+    .form-content button {
+        font-size: 18px;
+    }
+}
