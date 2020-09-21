@@ -76,6 +76,10 @@
         opacity: 0;
     }
 
+    .big-detective {
+        top: 95px;
+    }
+
     .trusted-by {
         justify-content: center;
     }
