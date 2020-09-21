@@ -48,6 +48,10 @@ header.login .header-title {
     font-weight: normal;
 }
 
+.header-title span {
+    margin-left: 2px;
+}
+
 #hamburger {
     display: none;
     border: none;
