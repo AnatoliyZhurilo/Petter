@@ -48,6 +48,7 @@
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
     left: 0;
+    top: 2px;
 }
 
 .first-block {
@@ -126,6 +127,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
+    max-width: 1000px;
 }
 
 /**/
@@ -186,6 +188,7 @@
 
 .how-works-item__info {
     width: 40%;
+    max-width: 400px;
 }
 
 .testimonial {
