@@ -81,7 +81,7 @@
     }
 
     .trusted-by img {
-        margin: 30px 30px;
+        margin: 30px 17px;
     }
 
     .cards {
@@ -101,8 +101,18 @@
         width: 60%;
     }
 
-    .big-detective {
-        display: none !important;
+    /*.big-detective {*/
+    /*    display: none !important;*/
+    /*}*/
+}
+
+@media screen and (max-width: 830px) {
+    .main-list {
+        height: auto;
+        width: 300px;
+    }
+    .main-list li{
+        width: 100%;
     }
 }
 
@@ -193,19 +203,43 @@
 }
 
 @media (max-width: 700px) {
+    main {
+        padding-top: 80px;
+    }
     .main-title {
-        font-size: 28px;
+        font-size: 30px;
         line-height: 38px;
         text-align: center;
     }
     .main-info {
         font-size: 18px;
         line-height: 36px;
+        padding-right: 0;
+        text-align: center;
     }
+
+    .main-list {
+        font-size: 18px;
+    }
+
+    .main-list li {
+        margin-bottom: 20px;
+    }
+
+    .main-list li:before {
+        width: 20px;
+        height: 19px;
+    }
+
+    .big-detective {
+        width: 130px;
+        height: 170px;
+        top: 155px;
+    }
+
     .pinky-big {
         color: var(--font-color);
     }
-
 
     .analyse-wrapper {
         position: relative;
@@ -231,7 +265,27 @@
         display: inline-block;
         position: absolute;
     }
+    h3 {
+        font-weight: 800;
+    }
+    img[alt=nike]{
+        height: 40px;
+        width: 111px;
+    }
+    img[alt=disney]{
+        height: 50px;
+        width: 119px;
+    }
+    img[alt=uber]{
+        width: 143px;
+        height: 30px;
+    }
+}
 
+@media (max-width: 380px) {
+    .big-detective {
+        top: 200px;
+    }
 }
 
 @media (max-width: 355px) {
@@ -246,5 +300,8 @@
 
     nav {
         padding: 40px 0 0 50px;
+    }
+    .main-title {
+        font-size: 27px;
     }
 }

@@ -43,6 +43,27 @@ pricingButton.on('click', e => {
   pricingBlock.scrollIntoView({behavior: 'smooth'})
 })
 
+let isSmallThirdTitle = false
+
+$( window ).resize(function(e) {
+  if (e.target.innerWidth <= 640 && !isSmallThirdTitle) {
+    isSmallThirdTitle = true
+    $( ".third-how-it-works-block h3" )[0].textContent = 'How it works';
+  } else if (e.target.innerWidth >= 640 && isSmallThirdTitle){
+    isSmallThirdTitle = false
+    $( ".third-how-it-works-block h3" )[0].textContent = 'How Influencer Detective Works';
+  }
+});
+
 $(function() {
+  if (window.innerWidth <= 640) {
+    $( ".third-how-it-works-block h3" )[0].textContent = 'How it works';
+  }
   $('img').lazy()
 });
+
+window.onload = () => {
+  if (window.innerWidth <= 640) {
+    $( ".third-how-it-works-block h3" )[0].textContent = 'How it works';
+  }
+}

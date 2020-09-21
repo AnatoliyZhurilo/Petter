@@ -43,8 +43,9 @@ header.login .header-title {
 }
 
 .header-title {
-    color: #000000 !important;
+    color: #222222 !important;
     font-size: 30px;
+    font-weight: normal;
 }
 
 #hamburger {
