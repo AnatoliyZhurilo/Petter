@@ -239,7 +239,7 @@
     .big-detective {
         width: 130px;
         height: 180px;
-        top: 205px;
+        top: 160px;
     }
 
     .pinky-big {
@@ -287,7 +287,7 @@
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 539px) {
     .big-detective {
         top: 200px;
     }

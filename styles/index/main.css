@@ -115,11 +115,10 @@
 .big-detective {
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 105px;
     z-index: 0;
     height: 420px;
     width: 290px;
-    opacity: 0.85;
 }
 
 .second-trusted-by-block {
