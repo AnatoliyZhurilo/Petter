@@ -218,6 +218,10 @@
         text-align: center;
     }
 
+    .and-more {
+        margin-bottom: 10px;
+    }
+
     .main-list {
         font-size: 18px;
     }
@@ -233,8 +237,8 @@
 
     .big-detective {
         width: 130px;
-        height: 170px;
-        top: 155px;
+        height: 180px;
+        top: 205px;
     }
 
     .pinky-big {
