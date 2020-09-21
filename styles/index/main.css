@@ -85,7 +85,7 @@
 }
 
 .analyse-button {
-    font-size: 18px;
+    font-size: 20px;
 
     background-color: var(--pink-color);
     border: none;
@@ -96,7 +96,7 @@
     margin-left: -5px;
     color: #fff;
     box-sizing: border-box;
-    top: -1px;
+    top: 1px;
     position: relative;
     padding: 0 10px 0 30px;
     cursor: pointer;
