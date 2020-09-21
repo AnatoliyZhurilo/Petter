@@ -134,6 +134,14 @@
     max-width: 1000px;
 }
 
+.trusted-by div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
 /**/
 
 .third-how-it-works-block {
