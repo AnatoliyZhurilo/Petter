@@ -228,6 +228,7 @@
 
     .main-list li {
         margin-bottom: 20px;
+        padding-left: 27px;
     }
 
     .main-list li:before {
